@@ -1,0 +1,49 @@
+@import "src/styles/global.module";
+
+.HeaderComponent {
+	height: 60px;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+
+	.container {
+		height: 100%;
+		width: 100%;
+		display: flex;
+		background-color: $dark-primary;
+		border-bottom-left-radius: 8px;
+		border-bottom-right-radius: 8px;
+		padding: 0.5rem 1rem;
+		box-sizing: border-box;
+
+		.logo {
+			height: 100%;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			font-size: 2rem;
+			color: $font-color;
+			text-decoration: none;
+		}
+		.actionHolder {
+			flex-grow: 1;
+			display: flex;
+			align-items: center;
+			justify-content: end;
+			a {
+				margin: 0 20px;
+			}
+		}
+	}
+}
+
+@media screen and (min-width: 576px) {
+	.HeaderComponent {
+		height: 80px;
+
+		.container {
+			width: $initial-width;
+			padding: 1rem 2rem;
+		}
+	}
+}

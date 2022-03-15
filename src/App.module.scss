@@ -1,0 +1,8 @@
+.App__component {
+	height: inherit;
+	.container {
+		display: flex;
+		flex-direction: column;
+		height: inherit;
+	}
+}

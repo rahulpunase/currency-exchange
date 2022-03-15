@@ -1,0 +1,13 @@
+@import "src/styles/global.module";
+
+.Input {
+	input {
+		padding: $control-padding;
+		border: 1px solid black;
+		border-radius: 4px;
+		outline: none;
+		font-size: $initial-font;
+		width: 100%;
+		box-sizing: border-box;
+	}
+}

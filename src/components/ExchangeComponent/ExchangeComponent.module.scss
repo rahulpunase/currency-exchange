@@ -1,0 +1,92 @@
+@import "src/styles/global.module";
+
+.ExchangeComponent {
+	width: 100%;
+	background-color: $dark-primary;
+	border-radius: 8px;
+
+	.container {
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		padding: 1rem;
+		box-sizing: border-box;
+		height: 100%;
+
+		.col4 {
+			width: 100%;
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+
+			.inputHolder {
+				flex: 1;
+				margin-bottom: 20px;
+			}
+
+			.exchangeRateDescription {
+				margin-bottom: 20px;
+			}
+		}
+
+		.col8 {
+			width: 100%;
+
+			.row {
+				display: flex;
+				justify-content: space-between;
+				align-items: end;
+				margin-top: 10px;
+				div {
+					margin: 0 4px;
+
+					&:nth-of-type(1) {
+						margin-left: 0;
+					}
+
+					&:last-of-type {
+						margin-right: 0;
+					}
+				}
+
+				.result {
+					font-size: 20px;
+					border: 1px solid black;
+					padding: 10px;
+					border-radius: 8px;
+				}
+
+				&:first-of-type {
+					margin-top: 0;
+				}
+			}
+		}
+	}
+}
+
+@media screen and (min-width: 576px) {
+	.ExchangeComponent {
+		.container {
+			flex-direction: row;
+			padding: 2rem;
+
+			.col4 {
+				width: 40%;
+				padding: 0 4px;
+
+				.inputHolder {
+					margin-bottom: 0;
+				}
+
+				.exchangeRateDescription {
+					margin-bottom: 0;
+				}
+			}
+
+			.col8 {
+				width: 60%;
+				padding: 0 4px;
+			}
+		}
+	}
+}
